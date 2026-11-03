@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d6d6d6;
+    color: #333;
+    padding: 40px 20px;
+}
+
+#container {
+    width: 80%;
+    max-width: 1000px; /* Prevents the CV from stretching too wide on big screens */
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border: 2px solid lightblue;
+}
+
+header {
+    margin-bottom: 20px;
+    border-bottom: 3px solid #a58b72; /* Replaced the broken 5px layout box with a clean accent line */
+    padding-bottom: 10px;
+}
+
+/* This creates the core two-column split: Sidebars on the left, Content on the right */
+#mainn {
+    display: flex;
+    gap: 30px;
+}
+
+/* Group wrapper for your side sections to stack vertically on the left side */
+.left-columns {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 250px;
+    flex-shrink: 0;
+    border-right: 1px solid #aaa;
+    padding-right: 20px;
+}
+
+#content {
+    flex: 1;
+    min-width: 0;
+}
+
+.profile {
+    margin-bottom: 16px;
+    padding: 16px;
+    background: mintcream;
+    border: 1px solid lightblue;
+}
+
+.experience {
+    margin-bottom: 13px;
+    padding: 16px;
+    background: mintcream;
+    border: 1px solid lightblue;
+}
+
+header {
+    margin-bottom: 20px;
+    border-bottom: 3px solid #a58b72;
+    padding-bottom: 10px;
+}
+
+/* Aligns the name and the image side-by-side horizontally */
+.header-content {
+    display: flex;
+    align-items: center; /* Centers them vertically relative to each other */
+    gap: 20px;           /* Adds space between the name and the image */
+}
+
+/* Turns the image into a perfect, clean circle */
+.profile-pic {
+    width: 80px;          /* Set the exact size you want */
+    height: 80px;         /* Height must match the width for a perfect circle */
+    border-radius: 50%;   /* This creates the circle effect */
+    object-fit: cover;    /* Prevents the image from stretching or distorting */
+    border: 2px solid #a58b72; /* Optional: Adds a matching border around the photo */
+}
+
